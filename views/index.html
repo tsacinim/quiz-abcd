@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Quiz ABCD</title>
+  <meta name="description" content="Quiz ABCD">
+  <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+  <link rel="stylesheet" href="/style.css">
+  
+  <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+  <!-- <script src="https://unpkg.com/axios@0.18.0/dist/axios.min.js"></script> -->
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/pouchdb@6.4.3/dist/pouchdb.min.js"></script> -->
+</head>
+<body>
+  <form id="quizForm" class="" action="" method="post" enctype="text/plain">
+    <fieldset class="">
+      <h4>Pick your answer below:</h4>
+      <label class="">
+        <input type="radio" name="quiz" value="A" required> A
+      </label>
+      <label class="">
+        <input type="radio" name="quiz" value="B"> B
+      </label>
+      <label class="">
+        <input type="radio" name="quiz" value="C"> C
+      </label>
+      <label class="">
+        <input type="radio" name="quiz" value="D"> D
+      </label>
+      <input class="" id="toDatabase" type="button" value="submit">
+    </fieldset>
+  </form>
+  <script src="/client.js"></script>
+</body>
+</html>

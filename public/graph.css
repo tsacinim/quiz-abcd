@@ -1,0 +1,110 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 0px;
+  text-align: center;
+  font-size: x-large;
+  height: 100vh;
+  background-color: azure;
+}
+
+form {
+  background-color: #e6fee6;
+  border: lightgray solid 2px;
+  border-radius: 15px;
+  margin: 5px;
+  padding: 7px;
+  height: 90vh;
+}
+fieldset {
+  background-color: #b6fcb6;
+  border: yellowgreen solid 2px;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  color: seagreen;
+}
+
+legend {
+  background-color: mediumaquamarine;
+  padding: 7px 20px 11px 20px;
+  border: yellowgreen solid 2px;
+  border-radius: 20px;
+}
+
+
+label {
+  display: block;
+  margin: 10px 2px;
+}
+
+label > span {
+  display: block;
+  margin-bottom: -7px;
+}
+
+input[type=button] {
+  border: yellowgreen solid 2px;
+  border-radius: 10px;
+  background-color: aquamarine;
+  color: seagreen;
+  margin: 15px 5px;
+  padding: 10px 20px 15px 20px;
+  font-family: helvetica, arial, sans-serif;
+  font-size: x-large;
+/*   font-weight: bold; */
+  box-shadow: 0 5px 3px -3px darkgreen;
+}
+
+input[type=button]:hover {
+  background-color: mediumaquamarine;
+}
+
+input[type=date], input[type=time] {
+  padding: 2px 7px 5px 7px;
+  color: seagreen;
+}
+
+div#graph {
+  margin: 30px;
+  padding-bottom: 30px
+}
+
+
+@media screen and (min-width: 900px) {
+  form {
+    padding-left: 20vw;    
+    padding-right: 20vw;
+  }
+}
+
+/* D3 BAR CHART */
+
+svg {
+  display: inline-block;
+}
+
+.bar rect {
+  fill: mediumaquamarine;
+}
+.bar text {
+  fill: darkgreen;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Graph Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <link rel="stylesheet" href="https://npmcdn.com/tachyons@4.1.0/css/tachyons.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-sham.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.34.2/es6-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.34.2/es6-sham.min.js"></script>
+    <script src="https://wzrd.in/standalone/es7-shim@latest"></script>
+    
+    <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+<!--     <script src="https://cdn.jsdelivr.net/npm/pouchdb@6.4.3/dist/pouchdb.min.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+
+    <link rel="stylesheet" href="graph.css"/>
+  </head>
+  <body class="tc">
+    <form class="dib tc br4 mt4 ml3 black-30">
+      <div id="graph" class="tc"></div>
+      <fieldset class="br4 pt2 ph5-ns">
+
+        <legend>Filter votes by datetime interval</legend>
+
+        <label class="db mb1">
+          <span>starting date and time</span>
+          <br>
+          <input id="startdate" class="mb1 black-70" type="date">
+          <input id="starttime" class="black-70" type="time">
+        </label>
+
+        <!-- <label class="dn mb1">
+          ending date and time
+          <br>
+          <input id="stopdate" class="mb1 black-70" type="date">
+          <input id="stoptime" class="black-70" type="time">
+        </label> -->
+
+        <input type="button" id="filter" value="filter votes in interval" class="f5 pointer br2 black-60 bg-green">
+
+      </fieldset>
+    </form>
+
+    <script src="//d3js.org/d3.v3.min.js"></script>
+    <!-- <script src="//d3js.org/d3.v3.js"></script> -->
+    <!-- <script src="//d3js.org/d3.v4.min.js"></script> -->
+
+    <script src="graph.js"></script>
+  </body>
+</html>
