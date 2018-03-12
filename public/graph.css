@@ -11,26 +11,26 @@ form {
   background-color: #e6fee6;
   border: lightgray solid 2px;
   border-radius: 15px;
-  margin: 5px;
+  margin: 5px 5px;
   padding: 7px;
-  height: 90vh;
+  height: 93vh;
 }
 fieldset {
   background-color: #b6fcb6;
   border: yellowgreen solid 2px;
   border-radius: 20px;
-  margin: 10px;
+  margin: 10px 60px;
   padding: 10px;
   color: seagreen;
 }
 
 legend {
   background-color: mediumaquamarine;
-  padding: 7px 20px 11px 20px;
+  margin: 0px 5vw;
+  padding: 7px 15px 11px 15px;
   border: yellowgreen solid 2px;
   border-radius: 20px;
 }
-
 
 label {
   display: block;
@@ -72,8 +72,10 @@ div#graph {
 
 @media screen and (min-width: 900px) {
   form {
-    padding-left: 20vw;    
-    padding-right: 20vw;
+    margin: 5px 20vw;    
+  }
+  fieldset {
+    margin: 5px 10vw;
   }
 }
 
