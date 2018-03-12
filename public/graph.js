@@ -1,13 +1,11 @@
 // const moment = require('moment')
 const moment = window.moment;
-// const PouchDB = require('pouchdb')
-const PouchDB = window.PouchDB;
 // const d3 = require('d3')
 const d3 = window.d3;
 
-// document.getElementById('startdate').value = '2016-08-28'
+// '2016-08-28'
 document.getElementById('startdate').value = moment().format('YYYY-MM-DD')
-// document.getElementById('starttime').value = '16:00'
+// '16:00'
 document.getElementById('starttime').value = moment().format('HH:mm')
 
 document.getElementById('filter').addEventListener('click', filterTimeInterval)
@@ -65,8 +63,8 @@ function syncGraphData () {
 function showGraph (data, total) {
 
   var margin = {top: 20, right: 20, bottom: 30, left: 40}
-  var width = 280 - margin.left - margin.right
-  var height = 200 - margin.top - margin.bottom
+  var width = 650 - margin.left - margin.right
+  var height = 500 - margin.top - margin.bottom
 
   var x = d3.scale.ordinal()
     .rangeRoundBands([0, width], 0.1)
@@ -127,7 +125,7 @@ function showGraph (data, total) {
     .append('text')
     .attr('transform', 'rotate(-90)')
     .attr('y', 6)
-    .attr('x', 6)
+    .attr('x', -100)
     .attr('dy', '-0.71em')
     .attr('dx', '-.5em')
     .style('text-anchor', 'end')
